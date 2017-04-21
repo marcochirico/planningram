@@ -72,7 +72,6 @@ class HomeController extends Controller
     	$payment->setTransactions(array($transaction));
 
     	$response = $payment->create($this->_apiContext);
-        print_r($response);
     	$redirectUrl = $response->links[1]->href;
         die($redirectUrl);
     	return Redirect::to( $redirectUrl );
