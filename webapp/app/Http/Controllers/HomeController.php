@@ -53,7 +53,7 @@ class HomeController extends Controller
 
         $amount = PayPal:: Amount();
     	$amount->setCurrency('EUR');
-    	$amount->setTotal(42); // This is the simple way,
+    	$amount->setTotal(0.5); // This is the simple way,
     	// you can alternatively describe everything in the order separately;
     	// Reference the PayPal PHP REST SDK for details.
 
